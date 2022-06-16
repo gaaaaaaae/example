@@ -1,0 +1,451 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+ul,ol{list-style:none;}
+a{text-decoration:none; color:inherit;}
+.clear::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+body{
+  font-family:"돋움", Arial;
+  user-select:none;
+  -webkit-user-select:none;
+  color:#767676;
+}
+html,body{
+  scroll-behavior:smooth;
+}
+.topbtn{
+  position:fixed;
+  bottom:20px;
+  right:30px;
+  z-index:999;
+  border:none;
+  outline:none;
+  font-size:50px;
+  color:#8b6d60;
+  cursor:pointer;
+  background-color:transparent;
+  display:none;/*버튼을 화면에서 제거*/
+}
+.topbtn:hover{
+  color:rosybrown;
+}
+
+header{
+  width:100%;
+  min-width:1200px;
+}
+
+.brown{
+  width:100%;
+  height:80px;
+  background-color:#5e4b42;
+  color:#fff;
+}
+
+.brown>.wrap{
+  width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  padding:10px 0;
+  justify-content:space-between;
+  overflow:hidden;
+}
+
+.brown .search{
+  font-size:25px;
+}
+.brown li{
+  float:left;
+  margin-left:25px;
+}
+.brown #language{
+  width:77px;
+  height:30px;
+  background-color:#fff;
+  color:#5e4b42;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  border-radius:5px;
+  border:none; outline:none;
+  padding:0px 10px;
+}
+#language>option{
+  font-weight:bold;
+  font-size:15px;
+}
+
+.gnb{
+  width:1200px;
+  height:40px;
+  padding:10px 20px;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  color:#5e4b42;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+}
+.gnb>li{
+  float:left;
+}
+
+/*~~~~~~~~~~~~~~~~상세페이지~~~~~~~~~~~~~~~~*/
+section{background-color:#f6f5e8;}
+section>.wrap{
+  width:1200px;
+  background-color:#fff;
+  margin:auto;
+  padding:40px 0px;
+}
+section>.wrap1{height:370px; padding:85px 0px;}
+section>.wrap2{height:160px;}
+section>.wrap3{height:370px;}
+section>.wrap4{height:900px; padding:60px 0px;}
+section>.wrap5{height:700px; padding:40px 90px;}
+section>.wrap6{height:665px; padding:100px 0px;}
+section>hr{
+  width:1000px;
+  margin:auto;
+  background-color:#cdcdcd;
+}
+
+/*rosePerfume 구매하기*/
+.roseAll{
+  width:550px;
+  height:200px;
+  margin:auto;
+}
+.roseLeft > a{
+  width:90px;
+  height:200px;
+  float:left;
+}
+.roseLeft > a:first-child{margin-right:5px;}
+.roseLeft > a  img{
+  width:100%;
+}
+.roseRight{
+  width:310px;
+  height:200px;
+  float:right;
+  color:#814049;
+  line-height:40px;
+  margin-left:50px;
+  padding:25px 0px;
+}
+.roseRight>h1{font-size:16px;}
+.roseRight>.review>li{
+  float:left;
+  font-size:14px;
+  line-height:1.5;
+}
+.roseRight>.review>li:last-child{
+  font-size:12px;
+  text-decoration:underline;
+  float:right;
+}
+.roseRight > hr{width:310px;}
+.roseRight .gray{
+  font-size:12px;
+  color:#767676;
+}
+.roseRight .boxTxt{
+  height:30px;
+}
+.roseRight .boxTxt > input{
+  text-align:center;
+  font-size:12px;
+  line-height:30px;
+  outline:none;
+}
+.roseRight .boxTxt > .bag:hover,
+.roseRight .boxTxt > .bag:active{
+  background-color:#814049;
+  color:#fff;
+}
+.arrowBtn{
+  display:inline-block;
+  width:25px;
+  line-height:15px;
+  position:relative;
+  bottom:-7px;
+}
+.arrowBtn > button{
+  width:25px;
+  height:15px;
+}
+
+.roseRight .boxTxt>input:first-child{
+  border:1px solid #b7b7b7;
+  width:30px;
+  height:30px;
+  font-weight:bold;
+  position:relative;
+  bottom:1px;
+}
+.roseRight .boxTxt>input:last-child{
+  border:1px solid #814049;
+  width:195px;
+  height:30px;
+  color:#814049;
+  cursor:pointer;
+  background-color:#fff;
+}
+.roseRight .arrowBtn button{
+  border:none; outline:none;
+  background-color:transparent;
+  cursor:pointer;
+}
+
+/*listTxt 성분*/
+.listTxt .list{
+  width:740px;
+  height:80px;
+  margin:auto;
+  color:#767676;
+}
+.listTxt .list>h1{
+  font-size:16px;
+  font-weight:normal;
+  text-decoration:underline;
+}
+.listTxt .list>p{
+  font-size:14px;
+  margin-top:20px;
+  line-height:1.5;
+}
+
+/*note 테이스팅 노트*/
+.note .tasting{
+  width:740px;
+  height:275px;
+  margin:auto;
+  color:#767676;
+}
+.note .tasting>h1{
+  font-size:16px;
+  font-weight:normal;
+  text-decoration:underline;
+}
+.note .tasting>.noteBox{
+  width:530px;
+  margin:20px auto 0px;
+  display:flex;
+  justify-content: space-around;
+}
+.noteTxt{
+  padding:5px 0px;
+  line-height:35px;
+}
+.noteTxt p{color:#141414;}
+.noteTxt p.under{
+  color:#767676;
+  text-decoration:underline;
+}
+
+/*detail_1 디테일*/
+.wrap4{
+  text-align:center;
+  color:#808080;
+  line-height:1.5;
+}
+.wrap4 li:first-child{
+  font-size:20px;
+  margin:20px 0px;
+}
+.wrap4 img{margin:70px 0px;}
+
+/*detail_2 디테일*/
+.wrap5>.detail_{
+  width:1020px;
+  height:100%;
+  display:flex;
+  align-items: center;
+}
+.wrap5>.detail_>div:nth-child(1){width:60%;}
+.wrap5>.detail_>div:nth-child(2){width:40%;}
+.wrap5>div p{
+  color:#808080;
+  font-size:18px;
+  text-align:center;
+  line-height:1.5;
+}
+.wrap5 .detailTxt i{
+  margin:15px 0px;
+  font-size:25px;
+}
+
+/*pairing 나만의 페어링*/
+.pairing .myPair{
+  width:740px;
+  margin:auto;
+  color:#767676;
+}
+.pairing .myPair>h1{
+  font-size:16px;
+  font-weight:normal;
+  text-decoration:underline;
+}
+.pairing .myPair>p{
+  font-size:14px;
+  letter-spacing:-1px;
+  margin:20px 0px 50px;
+}
+.pairing .perfumeImg > li{
+  float:left;
+  font-size:14px;
+  text-align:center;
+  line-height:1.5;
+  margin:0px 20px;
+}
+.pairing .perfumeImg > li > img{width:200px;}
+
+/*하이라이트 효과*/
+.pairing .perfumeImg > li:hover img,
+.pairing .perfumeImg > li:active img{opacity:0.6;}
+
+.pairing .perfumeImg > li:hover p:nth-child(2),
+.pairing .perfumeImg > li:active p:nth-child(2){
+  text-decoration:underline;
+}
+
+
+.pairing .perfumeDrag{
+  width:100%;
+  height:250px;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+.pairing .perfumeImg{
+  width:1200px;
+  height:250px;
+  position:relative;
+}
+
+/*스크롤바 css*/
+.perfumeDrag::-webkit-scrollbar{
+  width:1px;
+  height:5px;  /* 스크롤바의 너비 */
+}
+.perfumeDrag::-webkit-scrollbar-thumb{
+  width:1px;
+  height:1px; /* 스크롤바의 길이 */
+  background:#555 /* 스크롤바의 색상 */
+}
+.perfumeDrag::-webkit-scrollbar-track{
+  background:#b7b7b7;/*스크롤바 뒷 배경 색상*/
+}
+
+.pairing .myPair #scrollBar{
+  width:100%;
+  height:1px;
+  background-color:#b7b7b7;
+  position:relative;
+  bottom:5px;
+}
+.pairing .myPair #bar{
+  width:240px;
+  padding:10px 0;
+  background:transparent;
+  position:absolute;
+  bottom:-5px;
+  cursor:pointer;
+}
+.pairing .myPair #bar::after{
+  content:"";
+  display:block;
+  position:absolute;
+  width:100%;
+  height:3px;
+  top:3px;
+  left:0;
+  background-color:#555;
+}
+
+/*푸터*/
+footer{
+  width:100%;
+  height:595px;
+  background-color:#5e4b42;
+  color:#fff;
+  font-size:12px;
+}
+footer>.wrap{
+  width:1200px;
+  padding:70px 0;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  line-height:1.5;
+}
+footer .left{
+  height:350px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+footer .right2{width:535px; margin-top:50px;}
+.right2>div{float:left; margin-right: 50px;}
+
+.email{width:510px; line-height:2;}
+.email>.box{
+  overflow:hidden;
+  margin:10px 0px;
+}
+.email input[type=text]{
+  width:335px;
+  height:35px;
+  border:1px solid #fff;
+  box-sizing:border-box;
+  background-color:transparent;
+  font-size:12px;
+  color:#fff;
+  float:left;
+  text-indent:10px;
+}
+.email input[type=text]::placeholder{color:#fff;}
+.email input[type=text]:focus{outline-color:#fff;}
+.email button{
+  width:35px;
+  height:35px;
+  float:left;
+  border:none; outline:none;
+  background-color:#fff;
+  cursor:pointer;
+}
+.email input[type=checkbox]{
+  width:13px;
+  height:13px;
+  outline:none;
+  margin-right:5px;
+  position:relative;
+  bottom:-2px; left:0;
+}
+
+footer .attention{width:600px; }
+footer .attention p{display:inline-block;}
+footer .continue{width:535px;}
+footer .order{width:125px;}
+footer .service{width:125px;}
+footer .place{width:125px;}
+footer .introduce{width:125px; margin-top:30px;}
+footer .social{width:125px; margin-top:50px;}
+footer hr{margin:10px 0px;}
+
+footer h1{font-size:14px;}
+footer p{font-size:12px;}
+footer .c{
+  width:100%;
+  border-top:3px solid #fff;
+}
+.copy{
+  width:1200px;
+  font-weight:normal;
+  margin:50px auto 0;
+  font-size:16px;
+}

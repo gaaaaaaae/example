@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8">
+     <title>Aesop_website</title>
+     <!--ios전용 뷰포트-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--외부정의 css-->
+     <link href="style.css" rel="stylesheet">
+     <!--폰트어썸-->
+     <script src="https://kit.fontawesome.com/5dd83c9083.js" crossorigin="anonymous"></script>
+   </head>
+ 
+   <body>
+    <header>
+      <div class="brown">
+        <div class="wrap">
+          <div class="logo"><a href="index.html"><img src="img/aesop_logo.png" alt="logo" width="100" ></a></div>
+          <ul class="search">
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li>
+              <select id="language">
+                <option>KR</option>
+                <option>EN</option>
+                <option>CN</option>
+                <option>JN</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="gnb">
+        <li><a href="#">SKIN CARE</a></li>
+        <li><a href="#">BODY & HAND</a></li>
+        <li><a href="#">HAIR</a></li>
+        <li><a href="#">PERFUME</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">KIT & TRAVEL PRODUCTS</a></li>
+        <li><a href="#">GIFT GUIDE</a></li>
+        <li><a href="#">READ</a></li>
+        <li><a href="#">STORE</a></li>
+      </ul>
+    </header>
+
+    <section class="mainBanner">
+        <video loop autoplay muted>
+          <source src="img/drop1.mp4" type="video/mp4">
+        </video>
+        <div class="imgbox">
+          <a href="#"><img src="img/main2.png" alt="main_product"></a>
+          <a href="#"><img src="img/main1.png" alt="main_product"></a>
+          <h1>밤에 꽃이 피다<br>밤에 물이 담다</h1>
+        </div>
+    </section>
+
+    <section class="banner1">
+      <div class="perfume">
+        <div class="txt">
+          <p id="eng">PERFUME</p>
+          <h1>마라케시 오 드 퍼퓸</h1>
+          <p>원초적이고 독특한 향</p>
+          <button type=button><a href="sub.html">MORE</a></button>
+        </div>
+        <a href="#"><img id="perfume" src="img/perfume.png" alt="perfume"></a>
+      </div>
+    </section>
+
+    <section class="banner2">
+      <div class="gray">
+        <a href="#"><img id="city" src="img/city.png" alt="city_skin"></a>
+        <div class="txt">
+          <h1>도시 거주자를 위한 추천 루틴</h1>
+          <p>
+            갑작스러운 일정 취소로 인한 스트레스, 장시간 근무, 혼잡한 출퇴근 등<br>
+            도시 생활의 일상적인 스트레스에 노출된 경우 피부에 각질이 생기고<br>
+            칙칙해 보일 수 있습니다. 세심한 클렌징과 항산화 성분이 풍부한 제품을<br>
+            레이어링 하여 피부를 탄탄하게 지탱하고 충분한 수분을 공급하세요.
+          </p>
+          <button type="button">about ></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner3">
+      <div class="wrap">
+        <h1>Most loved, best picks</h1>
+        <ul class="pick clear">
+          <li>
+              <a href="#"><img src="img/amost1.png" alt="handbalm"></a>
+              <p>레저렉션 아로마틱 핸드 밤</p>
+              <p class="eight">지친 손과 큐티클에 풍부한 수분을<br>
+                공급해주는 향긋한 보태니컬 핸드 밤</p>
+            <hr>
+            <ul class="bag clear">
+              <li>\ 31,000</li>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+          </li><!--핸드밤-->
+          <li>
+            <a href="#"><img src="img/amost2.png" alt="handwash"></a>
+              <p>레저렉션 아로마틱 핸드 워시</p>
+              <p class="eight">오렌지, 로즈마리, 라벤더 오일을<br>
+                함유한 부드러운 핸드 워시</p>
+            <hr>
+            <ul class="bag">
+              <li>\ 46,000</li>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+          </li><!--핸드워시-->
+          <li>
+              <a href="#"><img src="img/amost3.png" alt="bodylotion"></a>
+              <p>프로텍티브 바디로션 SPF50</p>
+              <p class="eight">SPF50이상의 자외선 차단 효과와 상쾌한 아로마로<br>        피부에 가볍게 흡수되는 바디 전용 자외선 차단제</p>
+            <hr>
+            <ul class="bag">
+              <li>\ 47,000</li>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+          </li><!--바디로션-->
+          <li>
+              <a href="#"><img src="img/amost4.png" alt="bodycleanser"></a>
+              <p>제라늄 리프 바디 클렌저</p>
+              <p class="eight">기존 비누에 대한 좋은 대안으로, 부드럽게 잔여물을<br>
+                제거하고 생기를 북돋아 주는 클렌징 젤</p>
+            <hr>
+            <ul class="bag">
+              <li>\ 56,000</li>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+          </li><!--바디 클렌저-->
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="left">
+          <div class="email">
+            <h1>이메일을 입력하세요 ▼</h1>
+            <div class="box">
+              <input type="text" placeholder="이메일" required name="email">
+              <button type="button">→</button>
+            </div><!--box END-->
+            <p>이솝 제품,서비스,스토어,행사,문화적 관심사 등 다양한 소식을 받아볼 수 있도록 구독하세요.</p>
+            <p><input type="checkbox">본인의 만 14세 이상 여부를 확인해주세요.</p>
+          </div><!--email END-->
+
+          <div class="attention">
+            <h1>주의</h1>
+            <hr>
+            <p>상호:이솝코리아 유한회사 | </p>
+            <p>주소:서울특별시 강남구 도산대로45길 10-6 이솝코리아 | </p>
+            <p>대표자:프레데리크미셸어완세일러 | </p>
+            <p>대표전화:1800-1987 | </p>
+            <p>대표 이메일:aesop@aesop.com | </p>
+            <p>호스팅 사업자:SAP Hybris | </p>
+            <p>사업자 등록 번호:220-88-56014 | </p>
+            <p>통신판매업 신고번호:2014-서울강남-02300</p>
+          </div>
+        </div><!--left End-->
+
+        <div class="right">
+          <div class="continue">
+            <h1>지속가능성</h1>
+            <hr>
+            <p>이솝은 비콥 인증을 획득한 브랜드이며, PETA로부터 비건 인증을 받은 브랜드입니다. <a class="more" href="#">더 알아보기</a></p>
+          </div>
+
+          <div class="right2">
+            <div class="mini1">
+              <div class="order">
+                <h1>주문 및 지원</h1>
+                <hr>
+                <ul>
+                  <li><a href="#">문의 하기</a></li>
+                  <li><a href="#">자주 묻는 질문 ↗</a></li>
+                  <li><a href="#">배송 ↗</a></li>
+                  <li><a href="#">반품 ↗</a></li>
+                  <li><a href="#">배송 조회하기 ↗</a></li>
+                  <li><a href="#">주문 내역</a></li>
+                  <li><a href="#">이용 약관</a></li>
+                </ul>
+              </div>
+            </div><!--mini1 End-->
+
+            <div class="mini2">
+              <div class="service">
+                <h1>서비스</h1>
+                <hr>
+                <ul>
+                  <li><a href="#">기업체 구매</a></li>
+                  <li><a href="#">페이셜 어포인트먼트</a></li>
+                  <li><a href="#">1:1 채팅 상담</a></li>
+                </ul>
+              </div>
+
+              <div class="introduce">
+                <h1>소개</h1>
+                <hr>
+                <ul>
+                  <li><a href="#">브랜드 스토리</a></li>
+                  <li><a href="#">이솝 재단</a></li>
+                  <li><a href="#">채용</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+              </div>
+            </div><!--mini2 End-->
+
+            <div class="mini3">
+              <div class="place">
+                <h1>위치 기본 설정</h1>
+                <hr>
+                <ul>
+                  <li><a href="#">배송: 대한민국</a></li>
+                  <li><a href="#">언어: 한국어</a></li>
+                </ul>
+              </div>
+
+              <div class="social">
+                <h1>소셜</h1>
+                <hr>
+                <ul>
+                  <li><a href="#">Instagram ↗</a></li>
+                  <li><a href="#">Twitter ↗</a></li>
+                  <li><a href="#">Linkedln ↗</a></li>
+                  <li><a href="#">Kakao Plus Friend ↗</a></li>
+                </ul>
+              </div>
+            </div><!--mini3 End-->
+          </div><!--right2-->
+         </div><!--right End-->
+      </div><!--wrap END-->
+
+      <div class="c">
+        <div class="copy">&copy; Aesop</div class="copy">
+      </div>
+    </footer>
+   </body>
+</html>

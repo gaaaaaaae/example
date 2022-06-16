@@ -1,0 +1,357 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+ul,ol{list-style:none;}
+a{text-decoration:none; color:inherit;}
+.clear::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+body{
+  font-family:"돋움", Arial;
+  user-select:none;
+  -webkit-user-select:none;
+}
+header{
+  width:100%;
+  min-width:1200px;
+}
+
+.brown{
+  width:100%;
+  height:80px;
+  background-color:#5e4b42;
+  color:#fff;
+}
+
+.brown>.wrap{
+  width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  padding:10px 0;
+  justify-content:space-between;
+  overflow:hidden;
+}
+
+.brown .search{
+  font-size:25px;
+}
+.brown li{
+  float:left;
+  margin-left:25px;
+}
+.brown #language{
+  width:77px;
+  height:30px;
+  background-color:#fff;
+  color:#5e4b42;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  border-radius:5px;
+  border:none; outline:none;
+  padding:0px 10px;
+}
+#language>option{
+  font-weight:bold;
+  font-size:15px;
+}
+
+.gnb{
+  width:1200px;
+  height:40px;
+  padding:10px 20px;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  color:#5e4b42;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+}
+.gnb>li{
+  float:left;
+}
+.gnb > li > a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+/*메인배너*/
+.mainBanner{
+  position:relative;
+  width:100%;
+  height:650px;
+  overflow:hidden;
+}
+
+.mainBanner video{
+  width:100%;
+  position:absolute;
+}
+.mainBanner .imgbox{
+  position:absolute;
+  left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  z-index:1;
+  display:flex;
+  align-items:center;
+}
+.mainBanner .imgbox img:nth-child(2){margin:0px 45px;}
+.mainBanner h1{
+  color:#fff;
+  font-size:20px;
+  font-weight:normal;
+  line-height:1.4;
+  margin-left:20px;
+}
+
+/*메인배너 하이라이트 효과*/
+.mainBanner:hover a:nth-child(1){
+  animation:up 2s ease infinite;
+}
+@keyframes up{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(-6px);}
+  100%{transform:translateY(0px);}
+}
+.mainBanner:hover a:nth-child(2){
+  animation:down 2s ease infinite;
+}
+@keyframes down{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(6px);}
+  100%{transform:translateY(0px);}
+}
+.mainBanner:hover h1{
+  background:linear-gradient(to left, skyblue, rgba(255, 255, 255, 0.5));
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+}
+
+/*서브배너 : 향수*/
+.banner1{
+  width:100%;
+  height:390px;
+  background:#f6f5e8 url(img/banner1_bg.png) center no-repeat;
+  display:flex;
+  align-items:center;
+}
+.banner1 .perfume{
+  display:flex;
+  align-items:center;
+  margin:auto;
+}
+.banner1 .txt{
+  font-size:15px;
+  color:#979797;
+  line-height:1.6;
+  margin-right:75px;
+}
+.banner1 #eng{
+  font-family:Arial;
+}
+.banner1 h1{
+  font-size:20px;
+  color:#7e6052;
+}
+.banner1 button{
+  width:175px;
+  height:45px;
+  border-radius:5px;
+  border:none; outline:none;
+  background-color:#7e6052;
+  color:#fff;
+  font-family:Arial;
+  font-size:20px;
+  margin-top:10px;
+  cursor:pointer;
+}
+.banner1 img{height:275px;}
+
+/*향수배너 하이라이트 효과*/
+.banner1 button:hover,
+.banner1 button:active{
+  background-color:#6b5246;
+}
+
+/*서브배너 : 도시루틴*/
+.banner2{
+  width:100%;
+  height:400px;
+  background-color:#a0a1a3;
+  color:#fff;
+}
+.banner2>.gray{
+  width:1200px;
+  display:flex;
+  align-items:center;
+  margin:auto;
+}
+.banner2 .txt{margin-left:115px;}
+.banner2 h1{font-size:24px;}
+.banner2 p{
+  font-size:15px;
+  margin:20px 0px;
+  line-height:1.4;
+}
+.banner2 button{
+  width:125px;
+  height:40px;
+  background-color:#959595;
+  color:#fff;
+  border:none; outline:none;
+  border-radius:5px;
+  font-family:Arial;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/*도시루틴배너 하이라이트 효과*/
+.banner2 button:hover,
+.banner2 button:active{
+  background-color:#808080;
+}
+
+/*서브배너 : 모스트 러브 베스트 픽*/
+.banner3{
+  width:100%;
+  background-color:#f6f5e8;
+}
+.banner3 > .wrap{
+  width:1200px;
+  height:600px;
+  margin:auto;
+  position:relative;
+  padding-top:40px;
+}
+.banner3 h1{
+  font-family:"Times New Roman";
+  font-size:25px;
+  color:#5e4b42;
+  line-height:40px;
+  margin-bottom:40px;
+  padding-left:20px
+}
+
+.banner3 .pick{
+  width:100%;
+}
+.pick > li{
+  width:280px;
+  font-family:"돋움";
+  font-size:14px;
+  color:#5e4b42;
+  float:left;
+  text-align:center;
+  margin:0 10px;
+  line-height:1.5;
+  cursor:pointer;
+}
+.pick > li:hover img{opacity:0.6;}
+.pick > li:hover p:nth-child(2){text-decoration:underline;}
+
+li>p:nth-child(2){
+  margin-top:30px;
+  margin-bottom:10px;
+}
+hr{margin:10px 0px;}
+.banner3 .eight{font-size:12px;}
+.banner3 .bag{
+  width:190px;
+  margin:auto;
+}
+.banner3 .bag > li{
+  border:1px solid #5e4b42;
+  padding:10px;
+  float:left;
+}
+.bag>li:first-child{width:140px;}
+.bag>li:last-child{width:50px; border-left:none;}
+.bag i{font-size:17px;}
+
+/*푸터*/
+footer{
+  width:100%;
+  height:595px;
+  background-color:#5e4b42;
+  color:#fff;
+  font-size:12px;
+}
+footer>.wrap{
+  width:1200px;
+  padding:70px 0;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  line-height:1.5;
+}
+footer .left{
+  height:350px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+footer .right2{width:535px; margin-top:50px;}
+.right2>div{ float:left; margin-right: 50px;}
+
+.email{width:510px; line-height:2;}
+.email>.box{
+  overflow:hidden;
+  margin:10px 0px;
+}
+.email input[type=text]{
+  width:335px;
+  height:35px;
+  border:1px solid #fff;
+  box-sizing:border-box;
+  background-color:transparent;
+  font-size:12px;
+  color:#fff;
+  float:left;
+  text-indent:10px;
+}
+.email input[type=text]::placeholder{color:#fff;}
+.email input[type=text]:focus{outline-color:#fff;}
+.email button{
+  width:35px;
+  height:35px;
+  float:left;
+  border:none; outline:none;
+  background-color:#fff;
+  cursor:pointer;
+}
+.email input[type=checkbox]{
+  width:13px;
+  height:13px;
+  outline:none;
+  margin-right:5px;
+  position:relative;
+  bottom:-2px; left:0;
+}
+
+footer .attention{width:600px;}
+footer .attention p{display:inline-block;}
+footer .continue{width:535px;}
+footer .order{width:125px;}
+footer .service{width:125px;}
+footer .place{width:125px;}
+footer .introduce{width:125px; margin-top:30px;}
+footer .social{width:125px; margin-top:50px;}
+
+footer h1{font-size:14px;}
+footer p{font-size:12px;}
+footer .c{
+  width:100%;
+  border-top:3px solid #fff;
+}
+.copy{
+  width:1200px;
+  font-weight:normal;
+  margin:50px auto 0;
+  font-size:16px;
+}
+
+.continue .more{text-decoration:underline;}
